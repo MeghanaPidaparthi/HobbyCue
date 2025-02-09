@@ -57,7 +57,11 @@ const Navbar = () => {
       )}
 
       {isMobile ? (
-        <FiMenu onClick={toggleMobileMenu} style={{ fontSize: "1.5rem", cursor: "pointer" }} />
+        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+          <FiSearch style={{ fontSize: "1.5rem", cursor: "pointer",color:"#8064A2" }} />
+          <FiBell style={{ fontSize: "1.5rem", cursor: "pointer",color:"#8064A2" }} />
+          <FiMenu onClick={toggleMobileMenu} style={{ fontSize: "1.5rem", cursor: "pointer",color:"#8064A2" }} />
+        </div>
       ) : (
         <div style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
           <div onClick={toggleExplore} style={{ cursor: "pointer" }}>

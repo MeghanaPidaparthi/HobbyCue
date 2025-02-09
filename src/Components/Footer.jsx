@@ -12,7 +12,6 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.container}>
-        {/* Column 1: Hobbycue */}
         <div style={styles.column}>
           <h3 style={styles.heading}>Hobbycue</h3>
           <p style={styles.link}>About Us</p>
@@ -22,7 +21,6 @@ const Footer = () => {
           <p style={styles.link}>Contact Us</p>
         </div>
 
-        {/* Column 2: How Do I */}
         <div style={styles.column}>
           <h3 style={styles.heading}>How Do I</h3>
           <p style={styles.link}>Sign Up</p>
@@ -33,7 +31,6 @@ const Footer = () => {
           <p style={styles.link}>Other Queries</p>
         </div>
 
-        {/* Column 3: Quick Links */}
         <div style={styles.column}>
           <h3 style={styles.heading}>Quick Links</h3>
           <p style={styles.link}>Listings</p>
@@ -42,7 +39,6 @@ const Footer = () => {
           <p style={styles.link}>Community</p>
         </div>
 
-        {/* Column 4: Social Media & Invite Friends */}
         <div style={styles.socialColumn}>
           <h3 style={styles.heading}>Social Media</h3>
           <div style={styles.socialIcons}>
@@ -65,13 +61,12 @@ const Footer = () => {
       </div>
 
       <div style={styles.copyright}>
-        © Purple Cues Private Limited
+        &copy; Purple Cues Private Limited
       </div>
     </footer>
   );
 };
 
-// Inline CSS Styles
 const styles = {
   footer: {
     backgroundColor: "#FFFFFF",
@@ -84,9 +79,10 @@ const styles = {
     justifyContent: "space-between",
     maxWidth: "1200px",
     margin: "0 auto",
+    gap: "1.5rem",
   },
   column: {
-    flex: "1",
+    flex: "1 1 200px",
     minWidth: "150px",
     marginBottom: "1rem",
   },
@@ -102,12 +98,15 @@ const styles = {
     cursor: "pointer",
   },
   socialColumn: {
-    flex: "1",
+    flex: "1 1 250px",
     minWidth: "250px",
     marginBottom: "1rem",
+    textAlign: "center",
   },
   socialIcons: {
     display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
     gap: "10px",
     marginBottom: "1rem",
   },
@@ -118,11 +117,13 @@ const styles = {
   },
   inviteContainer: {
     display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
     gap: "10px",
     marginTop: "1rem",
   },
   input: {
-    flex: "1",
+    flex: "1 1 200px",
     padding: "0.5rem",
     border: "1px solid #8064A2",
     borderRadius: "4px",
